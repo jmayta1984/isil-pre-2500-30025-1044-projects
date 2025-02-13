@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            
+            VStack {
+                LazyHStack {
+                    ForEach(APIEndpoint.allCases, id: \.self) { endpoint in
+                        Text(endpoint.displayName)
+                            .font(.subheadline)
+                            .padding([.leading, .trailing])
+                            
+                    }
+                }.fixedSize()
+                MovieListView()
+            }
         }
-        .padding()
     }
 }
 
