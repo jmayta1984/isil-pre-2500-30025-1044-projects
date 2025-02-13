@@ -13,6 +13,6 @@ struct Mapper {
     
     static func toCast(response: CastResponse) -> Cast {
         return Cast(id: response.id, name: response.name,
-         poster: APIConstants.imageBaseURL + response.poster, character: response.character)
+                    poster: APIConstants.imageBaseURL + (response.poster ?? ""), character: response.character )
     }
 }

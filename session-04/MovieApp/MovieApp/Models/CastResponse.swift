@@ -13,7 +13,7 @@ struct CastResponse: Decodable {
     let id: Int
     let name: String
     let character: String
-    let poster: String
+    let poster: String?
     
     enum CodingKeys: String, CodingKey {
         case id

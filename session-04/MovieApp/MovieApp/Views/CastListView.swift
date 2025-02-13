@@ -12,12 +12,20 @@ struct CastListView: View {
     @StateObject var viewModel = CastListViewModel()
     
     var body: some View {
-        Text(viewModel.message)
-        List {
-            ForEach(viewModel.cast) { cast in
-                Text(cast.name)
+        ScrollView(.horizontal) {
+            HStack {
+                
+                ForEach(viewModel.cast) { cast in
+                    Text(cast.name)
+                }
             }
+            
+            
+            
+            
         }
+        
+        
         .onAppear {
             viewModel.getCast(id: id)
         }

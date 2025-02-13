@@ -28,6 +28,8 @@ class CastService {
                     completion(cast, nil)
                 } catch let error {
                     completion(nil, error.localizedDescription )
+                    print(url)
+
                 }
             } else {
                 completion(nil, message ?? "Error: no response")

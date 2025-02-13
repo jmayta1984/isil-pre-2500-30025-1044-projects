@@ -64,13 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D4FBC862D5D82750072EF08 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		9D656F7D2D5D8EA400ABE725 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +100,6 @@
 		9DD7DA1B2D54408E006F321D /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
-				9D4FBC862D5D82750072EF08 /* ViewModels */,
 				9DD7DA252D5440F2006F321D /* Services */,
 				9DD7DA242D5440E3006F321D /* Configurations */,
 				9D656F7D2D5D8EA400ABE725 /* ViewModels */,

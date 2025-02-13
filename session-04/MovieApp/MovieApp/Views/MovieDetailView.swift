@@ -18,12 +18,12 @@ struct MovieDetailView: View {
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: .infinity, height: .infinity)
+                            
                             .clipShape(RoundedRectangle(cornerRadius: 5))
                     },
                     placeholder: {
                         RoundedRectangle(cornerRadius: 5)
-                            .frame(width: .infinity, height: .infinity)
+                           
 
                     }
                 )
@@ -35,11 +35,14 @@ struct MovieDetailView: View {
                 Text("Cast")
                     .fontWeight(.bold)
                     .foregroundStyle(.orange)
-                
                 CastListView(id: movie.id)
+
                 
             }
+
         }
+        
+
        
         
     }
