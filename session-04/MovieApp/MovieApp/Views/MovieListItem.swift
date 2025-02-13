@@ -8,11 +8,35 @@
 import SwiftUI
 
 struct MovieListItem: View {
+    let movie: Movie
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            AsyncImage(
+                url: URL(string: movie.poster),
+                content: { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 90, height: 135)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                },
+                placeholder: {
+                    RoundedRectangle(cornerRadius: 5)
+                        .frame(width: 90, height: 135)
+
+                }
+            )
+            VStack (alignment: .leading) {
+                Text(movie.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.orange)
+                Text(movie.overview)
+                    .lineLimit(2)
+            }
+           
+        }
+
     }
 }
 
-#Preview {
-    MovieListItem()
-}
+

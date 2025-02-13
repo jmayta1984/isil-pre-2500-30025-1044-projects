@@ -10,12 +10,13 @@ import Foundation
 class MovieListViewModel: ObservableObject {
     @Published private(set) var movies: [Movie] = []
     @Published private(set) var message = ""
+    @Published private(set) var endpoint = APIEndpoint.popular
     
     let movieService = MovieService()
 
     
     func getMovies()  {
-        movieService.getMovies { movies, message in
+        movieService.getMovies(endpoint: endpoint.rawValue) { movies, message in
             
             DispatchQueue.main.async{
                 if let movies = movies {
@@ -28,5 +29,12 @@ class MovieListViewModel: ObservableObject {
             }
            
         }
+    }
+    
+    func updateEndpoint(endpoint: APIEndpoint) {
+        self.endpoint = endpoint
+        self.movies = []
+        self.message = ""
+        getMovies()
     }
 }

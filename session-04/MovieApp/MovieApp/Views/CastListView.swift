@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct CastListView: View {
+    let id: Int
+    @StateObject var viewModel = CastListViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(viewModel.message)
+        List {
+            ForEach(viewModel.cast) { cast in
+                Text(cast.name)
+            }
+        }
+        .onAppear {
+            viewModel.getCast(id: id)
+        }
     }
 }
 
-#Preview {
-    CastListView()
-}

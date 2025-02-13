@@ -9,8 +9,10 @@ import Foundation
 
 class MovieService {
     
-    func getMovies(completion: @escaping ([Movie]?, String?) -> Void ) {
-        let url = APIConstants.baseURL + APIConstants.category + APIConstants.apiKey
+    func getMovies(endpoint: String, completion: @escaping ([Movie]?, String?) -> Void ) {
+        
+        let url = APIConstants.baseURL + endpoint + APIConstants.apiKey
+        
         HttpRequestHelper().GET(url: url) { success, data, message in
             if (success) {
                 
@@ -26,11 +28,13 @@ class MovieService {
                     }
                     completion(movies, nil)
                 } catch let error {
-                    completion(nil, error.localizedDescription)
+                    completion(nil, error.localizedDescription )
                 }
             } else {
                 completion(nil, message ?? "Error: no response")
             }
         }
     }
+    
+  
 }

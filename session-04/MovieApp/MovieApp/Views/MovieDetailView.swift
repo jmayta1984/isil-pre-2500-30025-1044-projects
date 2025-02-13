@@ -7,12 +7,41 @@
 
 import SwiftUI
 
-struct MovieViewDetail: View {
+struct MovieDetailView: View {
+    let movie: Movie
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack (alignment: .leading){
+                AsyncImage(
+                    url: URL(string: movie.poster),
+                    content: { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: .infinity, height: .infinity)
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                    },
+                    placeholder: {
+                        RoundedRectangle(cornerRadius: 5)
+                            .frame(width: .infinity, height: .infinity)
+
+                    }
+                )
+                Text(movie.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.orange)
+                Text(movie.overview)
+                
+                Text("Cast")
+                    .fontWeight(.bold)
+                    .foregroundStyle(.orange)
+                
+                CastListView(id: movie.id)
+                
+            }
+        }
+       
+        
     }
 }
 
-#Preview {
-    MovieViewDetail()
-}
