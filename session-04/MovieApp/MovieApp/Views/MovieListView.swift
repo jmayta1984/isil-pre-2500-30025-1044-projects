@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct MovieListView: View {
+    @StateObject var viewModel = MovieListViewModel()
     
-    @State var movies: [Movie] = []
-    
-    let movieService = MovieService()
     
     var body: some View {
         List {
-            ForEach(movies) { movie in
+            ForEach(viewModel.movies) { movie in
                 HStack {
                     AsyncImage(
                         url: URL(string: movie.poster),
@@ -45,12 +43,9 @@ struct MovieListView: View {
         }
         .listStyle(PlainListStyle())
         .onAppear {
-            movieService.getMovies { movies, message in
-                
-                if let movies = movies {
-                    self.movies = movies
-                }
-            }
+            viewModel.getMovies()
+          
+            
         }
     }
 }

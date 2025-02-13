@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D4FBC852D5D785D0072EF08 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FBC842D5D785D0072EF08 /* MovieListViewModel.swift */; };
 		9DD7DA1C2D54408E006F321D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7DA162D54408E006F321D /* Preview Assets.xcassets */; };
 		9DD7DA1D2D54408E006F321D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7DA182D54408E006F321D /* Assets.xcassets */; };
 		9DD7DA1E2D54408E006F321D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD7DA192D54408E006F321D /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D4FBC842D5D785D0072EF08 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieListViewModel.swift; path = MovieApp/MovieListViewModel.swift; sourceTree = SOURCE_ROOT; };
 		9DD7DA052D54405C006F321D /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD7DA162D54408E006F321D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DD7DA182D54408E006F321D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		9DD7DA232D5440CE006F321D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9D4FBC842D5D785D0072EF08 /* MovieListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				9DD7DA2F2D54545E006F321D /* HttpRequestHelper.swift in Sources */,
 				9DD7DA312D5460B7006F321D /* MovieService.swift in Sources */,
 				9DD7DA2B2D54488C006F321D /* Mapper.swift in Sources */,
+				9D4FBC852D5D785D0072EF08 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +361,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +390,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
