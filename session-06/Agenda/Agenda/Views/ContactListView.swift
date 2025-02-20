@@ -8,8 +8,37 @@
 import SwiftUI
 
 struct ContactListView: View {
+    
+    @State var contacts: [Contact] = []
+    var contactDAO = ContactDAO()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                ForEach(contacts) { contact in
+                    Text(contact.name ?? "")
+                }.onDelete { indexSet in
+                    if let index = indexSet.first {
+                        contactDAO.delete(contact: contacts[index])
+                    }
+                }
+            }
+            .onAppear {
+                contacts = contactDAO.fetchAll()
+            }
+            .navigationTitle("Agenda")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(destination: {
+                        ContactView { name in
+                            contactDAO.insert(name: name)
+                        }
+                    }) {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
     }
 }
 

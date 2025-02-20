@@ -3,20 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		9DEB9CF22D66B54F00214127 /* Agenda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEC2D66B54F00214127 /* Agenda.xcdatamodeld */; };
+		9DEB9CF32D66B54F00214127 /* AgendaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CED2D66B54F00214127 /* AgendaApp.swift */; };
+		9DEB9CF42D66B54F00214127 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEF2D66B54F00214127 /* PersistenceController.swift */; };
+		9DEB9CF52D66B54F00214127 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEA2D66B54F00214127 /* Preview Assets.xcassets */; };
+		9DEB9CF62D66B54F00214127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEE2D66B54F00214127 /* Assets.xcassets */; };
+		9DEB9CFA2D66B5A600214127 /* ContactDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CF92D66B59C00214127 /* ContactDAO.swift */; };
+		9DEB9CFD2D66BADC00214127 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CFC2D66BADC00214127 /* ContactListView.swift */; };
+		9DEB9CFF2D66BC2300214127 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CFE2D66BC2300214127 /* ContactView.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9DEB9CD42D66B17600214127 /* Agenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DEB9CEA2D66B54F00214127 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DEB9CED2D66B54F00214127 /* AgendaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaApp.swift; sourceTree = "<group>"; };
+		9DEB9CEE2D66B54F00214127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DEB9CEF2D66B54F00214127 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		9DEB9CF12D66B54F00214127 /* Agenda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Agenda.xcdatamodel; sourceTree = "<group>"; };
+		9DEB9CF92D66B59C00214127 /* ContactDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDAO.swift; sourceTree = "<group>"; };
+		9DEB9CFC2D66BADC00214127 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		9DEB9CFE2D66BC2300214127 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		9DEB9CD62D66B17600214127 /* Agenda */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Agenda;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9DEB9CD12D66B17600214127 /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		9DEB9CCB2D66B17600214127 = {
 			isa = PBXGroup;
 			children = (
-				9DEB9CD62D66B17600214127 /* Agenda */,
+				9DEB9CF02D66B54F00214127 /* Agenda */,
 				9DEB9CD52D66B17600214127 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,53 @@
 				9DEB9CD42D66B17600214127 /* Agenda.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9DEB9CEB2D66B54F00214127 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9DEB9CEA2D66B54F00214127 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DEB9CF02D66B54F00214127 /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				9DEB9CFB2D66BAB900214127 /* Views */,
+				9DEB9CF82D66B58700214127 /* DAO */,
+				9DEB9CF72D66B55500214127 /* Helpers */,
+				9DEB9CEB2D66B54F00214127 /* Preview Content */,
+				9DEB9CEC2D66B54F00214127 /* Agenda.xcdatamodeld */,
+				9DEB9CED2D66B54F00214127 /* AgendaApp.swift */,
+				9DEB9CEE2D66B54F00214127 /* Assets.xcassets */,
+			);
+			path = Agenda;
+			sourceTree = "<group>";
+		};
+		9DEB9CF72D66B55500214127 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9DEB9CEF2D66B54F00214127 /* PersistenceController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9DEB9CF82D66B58700214127 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				9DEB9CF92D66B59C00214127 /* ContactDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		9DEB9CFB2D66BAB900214127 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DEB9CFC2D66BADC00214127 /* ContactListView.swift */,
+				9DEB9CFE2D66BC2300214127 /* ContactView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				9DEB9CD62D66B17600214127 /* Agenda */,
 			);
 			name = Agenda;
 			packageProductDependencies = (
@@ -86,6 +141,7 @@
 				};
 			};
 			buildConfigurationList = 9DEB9CCF2D66B17600214127 /* Build configuration list for PBXProject "Agenda" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,8 +149,6 @@
 				Base,
 			);
 			mainGroup = 9DEB9CCB2D66B17600214127;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 9DEB9CD52D66B17600214127 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEB9CF52D66B54F00214127 /* Preview Assets.xcassets in Resources */,
+				9DEB9CF62D66B54F00214127 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEB9CFD2D66BADC00214127 /* ContactListView.swift in Sources */,
+				9DEB9CFF2D66BC2300214127 /* ContactView.swift in Sources */,
+				9DEB9CF22D66B54F00214127 /* Agenda.xcdatamodeld in Sources */,
+				9DEB9CF32D66B54F00214127 /* AgendaApp.swift in Sources */,
+				9DEB9CF42D66B54F00214127 /* PersistenceController.swift in Sources */,
+				9DEB9CFA2D66B5A600214127 /* ContactDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +350,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9DEB9CEC2D66B54F00214127 /* Agenda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DEB9CF12D66B54F00214127 /* Agenda.xcdatamodel */,
+			);
+			currentVersion = 9DEB9CF12D66B54F00214127 /* Agenda.xcdatamodel */;
+			path = Agenda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9DEB9CCC2D66B17600214127 /* Project object */;
 }

@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct ContactView: View {
+    @Environment(\.dismiss) var dismiss
+    
+    @State var name = ""
+    let addContact: (String) -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField("Name", text: $name)
+            Button(action: {
+                addContact(name)
+                dismiss()
+            }) {
+                Text("Save")
+            }
+        }
     }
 }
 
 #Preview {
-    ContactView()
+    ContactView { _ in
+        
+    }
 }
