@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DEB9CF22D66B54F00214127 /* Agenda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEC2D66B54F00214127 /* Agenda.xcdatamodeld */; };
+		9DEB9CF22D66B54F00214127 /* AgendaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEC2D66B54F00214127 /* AgendaModel.xcdatamodeld */; };
 		9DEB9CF32D66B54F00214127 /* AgendaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CED2D66B54F00214127 /* AgendaApp.swift */; };
 		9DEB9CF42D66B54F00214127 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEF2D66B54F00214127 /* PersistenceController.swift */; };
 		9DEB9CF52D66B54F00214127 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEB9CEA2D66B54F00214127 /* Preview Assets.xcassets */; };
@@ -15,6 +15,7 @@
 		9DEB9CFA2D66B5A600214127 /* ContactDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CF92D66B59C00214127 /* ContactDAO.swift */; };
 		9DEB9CFD2D66BADC00214127 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CFC2D66BADC00214127 /* ContactListView.swift */; };
 		9DEB9CFF2D66BC2300214127 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9CFE2D66BC2300214127 /* ContactView.swift */; };
+		9DEB9D022D66D26C00214127 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB9D012D66D26200214127 /* ContactListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +24,11 @@
 		9DEB9CED2D66B54F00214127 /* AgendaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaApp.swift; sourceTree = "<group>"; };
 		9DEB9CEE2D66B54F00214127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DEB9CEF2D66B54F00214127 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		9DEB9CF12D66B54F00214127 /* Agenda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Agenda.xcdatamodel; sourceTree = "<group>"; };
+		9DEB9CF12D66B54F00214127 /* AgendaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgendaModel.xcdatamodel; sourceTree = "<group>"; };
 		9DEB9CF92D66B59C00214127 /* ContactDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDAO.swift; sourceTree = "<group>"; };
 		9DEB9CFC2D66BADC00214127 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		9DEB9CFE2D66BC2300214127 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		9DEB9D012D66D26200214127 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +69,12 @@
 		9DEB9CF02D66B54F00214127 /* Agenda */ = {
 			isa = PBXGroup;
 			children = (
+				9DEB9D002D66D24600214127 /* ViewModels */,
 				9DEB9CFB2D66BAB900214127 /* Views */,
 				9DEB9CF82D66B58700214127 /* DAO */,
 				9DEB9CF72D66B55500214127 /* Helpers */,
 				9DEB9CEB2D66B54F00214127 /* Preview Content */,
-				9DEB9CEC2D66B54F00214127 /* Agenda.xcdatamodeld */,
+				9DEB9CEC2D66B54F00214127 /* AgendaModel.xcdatamodeld */,
 				9DEB9CED2D66B54F00214127 /* AgendaApp.swift */,
 				9DEB9CEE2D66B54F00214127 /* Assets.xcassets */,
 			);
@@ -101,6 +104,14 @@
 				9DEB9CFE2D66BC2300214127 /* ContactView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9DEB9D002D66D24600214127 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9DEB9D012D66D26200214127 /* ContactListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +188,10 @@
 			files = (
 				9DEB9CFD2D66BADC00214127 /* ContactListView.swift in Sources */,
 				9DEB9CFF2D66BC2300214127 /* ContactView.swift in Sources */,
-				9DEB9CF22D66B54F00214127 /* Agenda.xcdatamodeld in Sources */,
+				9DEB9CF22D66B54F00214127 /* AgendaModel.xcdatamodeld in Sources */,
 				9DEB9CF32D66B54F00214127 /* AgendaApp.swift in Sources */,
 				9DEB9CF42D66B54F00214127 /* PersistenceController.swift in Sources */,
+				9DEB9D022D66D26C00214127 /* ContactListViewModel.swift in Sources */,
 				9DEB9CFA2D66B5A600214127 /* ContactDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,13 +400,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9DEB9CEC2D66B54F00214127 /* Agenda.xcdatamodeld */ = {
+		9DEB9CEC2D66B54F00214127 /* AgendaModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9DEB9CF12D66B54F00214127 /* Agenda.xcdatamodel */,
+				9DEB9CF12D66B54F00214127 /* AgendaModel.xcdatamodel */,
 			);
-			currentVersion = 9DEB9CF12D66B54F00214127 /* Agenda.xcdatamodel */;
-			path = Agenda.xcdatamodeld;
+			currentVersion = 9DEB9CF12D66B54F00214127 /* AgendaModel.xcdatamodel */;
+			path = AgendaModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

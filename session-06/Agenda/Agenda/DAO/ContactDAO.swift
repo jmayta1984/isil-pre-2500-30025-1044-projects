@@ -21,6 +21,10 @@ class ContactDAO {
         saveContext()
     }
     
+    func update() {
+        saveContext()
+    }
+    
     func fetchAll() -> [Contact] {
         let request = NSFetchRequest<Contact>(entityName: "Contact")
         

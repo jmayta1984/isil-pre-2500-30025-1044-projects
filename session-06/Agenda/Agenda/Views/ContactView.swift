@@ -11,13 +11,13 @@ struct ContactView: View {
     @Environment(\.dismiss) var dismiss
     
     @State var name = ""
-    let addContact: (String) -> Void
+    let saveContact: (String) -> Void
     
     var body: some View {
         VStack {
             TextField("Name", text: $name)
             Button(action: {
-                addContact(name)
+                saveContact(name)
                 dismiss()
             }) {
                 Text("Save")
