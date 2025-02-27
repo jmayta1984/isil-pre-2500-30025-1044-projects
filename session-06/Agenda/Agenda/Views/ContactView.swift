@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContactView: View {
     @Environment(\.dismiss) var dismiss
-    
     @State var name = ""
+    
     let saveContact: (String) -> Void
     
     var body: some View {
         VStack {
             TextField("Name", text: $name)
+        
             Button(action: {
                 saveContact(name)
                 dismiss()
