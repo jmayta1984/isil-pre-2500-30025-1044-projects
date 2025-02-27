@@ -3,20 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		9D1E2CB32D700C2C00169813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1E2CAD2D700C2C00169813 /* Preview Assets.xcassets */; };
+		9D1E2CB42D700C2C00169813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1E2CAF2D700C2C00169813 /* Assets.xcassets */; };
+		9D1E2CB52D700C2C00169813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E2CB02D700C2C00169813 /* ContentView.swift */; };
+		9D1E2CB62D700C2C00169813 /* NotificationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E2CB12D700C2C00169813 /* NotificationsApp.swift */; };
+		9D1E2CB82D700C3B00169813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E2CB72D700C3800169813 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D1E2C9C2D7005C700169813 /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1E2CAD2D700C2C00169813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D1E2CAF2D700C2C00169813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D1E2CB02D700C2C00169813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D1E2CB12D700C2C00169813 /* NotificationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsApp.swift; sourceTree = "<group>"; };
+		9D1E2CB72D700C3800169813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		9D1E2C9E2D7005C700169813 /* Notifications */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D1E2C992D7005C700169813 /* Frameworks */ = {
@@ -32,7 +37,7 @@
 		9D1E2C932D7005C700169813 = {
 			isa = PBXGroup;
 			children = (
-				9D1E2C9E2D7005C700169813 /* Notifications */,
+				9D1E2CB22D700C2C00169813 /* Notifications */,
 				9D1E2C9D2D7005C700169813 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +48,26 @@
 				9D1E2C9C2D7005C700169813 /* Notifications.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9D1E2CAE2D700C2C00169813 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E2CAD2D700C2C00169813 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D1E2CB22D700C2C00169813 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E2CB72D700C3800169813 /* AppDelegate.swift */,
+				9D1E2CAE2D700C2C00169813 /* Preview Content */,
+				9D1E2CAF2D700C2C00169813 /* Assets.xcassets */,
+				9D1E2CB02D700C2C00169813 /* ContentView.swift */,
+				9D1E2CB12D700C2C00169813 /* NotificationsApp.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +84,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				9D1E2C9E2D7005C700169813 /* Notifications */,
 			);
 			name = Notifications;
 			packageProductDependencies = (
@@ -86,6 +108,7 @@
 				};
 			};
 			buildConfigurationList = 9D1E2C972D7005C700169813 /* Build configuration list for PBXProject "Notifications" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,8 +116,6 @@
 				Base,
 			);
 			mainGroup = 9D1E2C932D7005C700169813;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 9D1E2C9D2D7005C700169813 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,6 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1E2CB32D700C2C00169813 /* Preview Assets.xcassets in Resources */,
+				9D1E2CB42D700C2C00169813 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1E2CB82D700C3B00169813 /* AppDelegate.swift in Sources */,
+				9D1E2CB52D700C2C00169813 /* ContentView.swift in Sources */,
+				9D1E2CB62D700C2C00169813 /* NotificationsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +285,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
